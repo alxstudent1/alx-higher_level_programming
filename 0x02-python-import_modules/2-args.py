@@ -2,12 +2,12 @@
 if __name__ == "__main__":
     from sys import argv
     if len(argv) == 2:
-        print("{} argument:".format(len(argv) - 1))
+        print(f"{len(argv) - 1} argument:")
         for index, value in enumerate(argv[1 : ], start=1):
-            print("{}: {}".format(index, value))
+            print(f"{index}: {value}")
     elif len(argv) > 2:
-        print("{} arguments:".format(len(argv)))
+        print(f"{len(argv)} arguments:")
         for index, value in enumerate(argv[1 : ], start=1):
-            print("{}: {}".format(index, value))            
+            print(f"{index}: {value}")            
     else:
         print("0 arguments.")
