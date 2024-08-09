@@ -4,6 +4,7 @@ def multiple_returns(sentence):
     firs_char = sentence[0]
     if taille == 0:
         firs_char = None
-        return taille, firs_char
+        couple = (taille, first_char)
+        return couple
     else:
-        return taille, firs_char
+        return couple
